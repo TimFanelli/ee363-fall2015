@@ -1,0 +1,30 @@
+/**
+ * CONTACT FORM STYLE OVERRIDES
+ */
+.contactreset {
+	width: 70%;
+	margin: auto;
+	padding: 0px;
+	box-shadow: initial;
+	font-size: 20px;
+	font-size: initial;
+	line-height: initial;
+	font-weight: 300;
+	display: block;
+}
+
+.contactreset label {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.contactreset ul {
+	list-style: none;
+}
+
+.contactreset ul li {
+	display: block;
+	padding-left: 0px;
+}
+
