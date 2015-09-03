@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Getting Started with GitLab"
+date:   2015-09-03 14:00:00
+categories: gitlab
+---
+# Gitlab Server
+
+GitLab is deployed here:
+  [https://gitlab.camp.clarkson.edu](https://gitlab.camp.clarkson.edu)
+
+Please note: at the moment, we seem to be having trouble accessing that server from the ClarksonUniversity wi-fi. I've opened a ticket with OIT to get it resolved. In the meantime, please try accessing the server by IP instead:
+
+  [https://128.153.13.235/](https://128.153.13.235)
+
+# Getting Started
+
+Please read the [getting started guide](/documents/GettingStartedwithGitLab.pdf).
