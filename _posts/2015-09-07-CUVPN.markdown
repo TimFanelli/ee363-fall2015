@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Clarkson University VPN Instructions"
+categories: vpn
+---
+# Connecting to the VPN
+
+On your Desktop
+
+* [On a Mac](http://confluence.clarkson.edu/display/OITKB/Connecting+to+the+Cisco+AnyConnect+VPN+With+A+Mac)
+* [On Linux](http://confluence.clarkson.edu/display/OITKB/Connecting+To+Cisco+AnyConnect+with+Linux)
+* [On Windows](http://confluence.clarkson.edu/display/OITKB/Connecting+to+the+Cisco+AnyConnect+VPN+With+Windows)
+
+On your Mobile:
+
+* [Android](http://confluence.clarkson.edu/display/OITKB/Connecting+to+the+Cisco+AnyConnect+VPN+With+Android)
+* [iOS](http://confluence.clarkson.edu/display/OITKB/Connecting+to+the+Cisco+AnyConnect+VPN+With+An+iPhone+or+iPad)
