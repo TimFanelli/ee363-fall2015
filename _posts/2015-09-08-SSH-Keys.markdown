@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "Adding an SSH Key to your GitLab Profile"
+categories: vpn
+---
+# About
+In class, I told you about the two URLs available to access your Git repositories, the SSH URL, and the HTTPS URL; and that you should use the HTTPS URL, ignoring SSH.
+
+Unfortunately, this was bad advice. When you try to clone the repository in Eclipse, you'll get a rather generic error message indicating that you can't do that. This is because the HTTPS SSL Certificate is "self-signed," and therefore Git doesn't trust it.
+
+There are two ways to fix it. The "simple" way is to add "http.sslVerify = false" to your Git configuration. You can Google how to do that; but don't. Just because it's simple, doesn't mean it's "right".
+
+The "right" way is to generate an SSH Key, upload it to your profile on the GitLab server, and use the SSH URL instead.
+
+# Generating an SSH Key
+## Prerequisites
+If you're on Windows, you'll need to install a piece of software first. Mac and Linux users can skip ahead.
+
+Download and install [Git for Windows](http://git-scm.com/download/win) here. During installation, be sure to choose "Git Bash" as the installation type, and then just click through the defaults.
+
+## Open a Command Prompt
+Mac Users: Run Applications -> Utilities -> Terminal
+Windows Users: Run All Programs -> Git -> Git Bash
+Linux Users: Don't use linux if you can't find a command terminal.
+
+## Check to see if you have an SSH Key already
+Especially if you're a Mac or Linux user, there's a good chance you already have an SSH key and don't need to generate a new one. Execute the following command in the terminal:
+{% highlight bash %}
+ls ~/.ssh/
+{% endhighlight %}
+
+If you see "No such file or directory"; or if you DO NOT see "id_rsa" and "id_rsa.pub" files, then you do not have an SSH Key and need to generate a new one.
+
+If you DO see both "id_rsa" and "id_rsa.pub" then you already have an SSH Key, and can skip ahead to "Adding Your SSH Key to Your GitLab Profile".
+
+## Generating a New SSH Key
+Type the following command into the terminal and hit enter:
+{% highlight bash %}
+ssh-keygen -t rsa -b 2048
+{% endhighlight %}
+
+You'll be prompted to "Enter file in which to save the key" -- just hit enter to accept the default (DO NOT change the value)
+
+Next you'll be prompted for a passphrase -- just hit enter to use an empty passphrase, then enter again to confirm it.
+
+You'll see a goofy output, that looks something like this:
+{% highlight bash %}
+The key randomart image is:
++--[ RSA 2048]----+
+|                 |
+|                 |
+|  . o o o        |
+|   o * = . . .   |
+|    + o S o E    |
+|     + o . =     |
+|    o o + . .    |
+|     . . + o     |
+|        .  .o    |
++-----------------+
+{% endhighlight %}
+
+Congrats, you now have an SSH Key
+
+## Adding Your SSH Key to Your GitLab Profile
+Type the following command into the terminal:
+
+{% highlight bash %}
+cat ~/.ssh/id_rsa.pub
+{% endhighlight %}
+
+This will display the content of your SSH *public key* in the terminal window. **Make sure** you display *id_rsa.pub*, and not *id_rsa*. The latter contains your SSH *private key* and should never be shared.
+
+The output should look something like this:
+
+{% highlight bash %}
+timfanelli@gitlab:~$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ3HzmqkQxo1TxGUGd4yFrBxC7W0B9OOLqKoEN6tX4cD5lVtf4e+f/3rDzqgrwkYgliL57Hqso8HwKmjt3rtfwtp2YOOuGuCOxZG4uOMHBduaqw2kjGInZVcAFuohma21s3OCT1Nac/kO88cbJZRFiMVcJZbRfH34rmSSgYifMrJ1aEct+syFX0ag4NYYAa6ZXn8RzkzuS204w/Hp1NaxIiCq8iWSkZnLtQSpzvqXm73hoqwMRqbR3SXD9eOnZQekJPe1yP8w+CJdofW/SCQEtkTHbYMMBJvZv31/wWbK+ztlyFBQZqlBoSTzV//G0Ez1USeujN41oiy3XvdMh2UHn timfanelli@gitlab
+{% endhighlight %}
+
+Copy everything from ssh-rsa through *username@hostname* into the clipboard. Be sure to include both the ssh-rsa and username@hostname tokens!!
+
+Next, go to [the SSH Keys page of your GitLab profile](https://gitlab.camp.clarkson.edu/profile/keys) ([use this link if you still can't get to the server by name](https://128.153.13.235/profile/keys)), and click the green "Add SSH Key" button in the top-right corner.
+
+Paste your SSH key into the "Key" field, and give it a name (something like "My SSH Key" will do), then click Add Key.
+
+# Phew.
+Ok, you're done. You can now start using the SSH URL to interact with your Git repository. Please note, when you're using this URL, the SSH Key *is* your authentication -- so you **will not** enter your username and password in the authentication panel of eclipse. The username will prefill as "git" and the password will be blank. Leave those alone.
