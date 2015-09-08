@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adding an SSH Key to your GitLab Profile"
-categories: vpn
+categories: gitlab
 ---
 # About
 In class, I told you about the two URLs available to access your Git repositories, the SSH URL, and the HTTPS URL; and that you should use the HTTPS URL, ignoring SSH.
