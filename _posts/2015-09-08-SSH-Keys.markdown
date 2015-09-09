@@ -6,6 +6,14 @@ categories: gitlab
 # About
 In class, I told you about the two URLs available to access your Git repositories, the SSH URL, and the HTTPS URL; and that you should use the HTTPS URL, ignoring SSH.
 
+<div class="jumbotron" style="color: #ffffff; background-color: #ff9900;">
+<div class="container">
+<h1>Update</h1>
+<h2>As of 1:00PM September 9</h2>
+<p>The HTTPS issue on our GitLab server with the SSL Certificate has been resolved! These steps are now <i>optional</i>! Recommended, but optional.</p>
+</div>
+</div>
+
 Unfortunately, this was bad advice. When you try to clone the repository in Eclipse, you'll get a rather generic error message indicating that you can't do that. This is because the HTTPS SSL Certificate is "self-signed," and therefore Git doesn't trust it.
 
 There are two ways to fix it. The "simple" way is to add "http.sslVerify = false" to your Git configuration. You can Google how to do that; but don't. Just because it's simple, doesn't mean it's "right".
