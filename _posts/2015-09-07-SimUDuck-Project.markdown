@@ -79,12 +79,12 @@ Implement the design change shown on page 6: "How about an interface?". Then com
 ### Iteration 4
 Read through page 14, and implement the Duck Behaviors shown on page 13. Just implement the behaviors, we won't change the Duck classes until iteration 5.
 
-Commit and push, and tag it using the name: "duck behaviors"
+Commit and push, and tag it using the name: "duckBehaviors"
 
 ### Iteration 5
 Integrate your Duck Behaviors into the Ducks, as shown on pages 15 through 22.
 
-Commit, push, and tag it as "strategy pattern"
+Commit, push, and tag it as "strategyPattern"
 
 # Grading Notes
 This assignment will be aggregated into your cumulative "Project 1" score. I'm primarily looking to see that you:
