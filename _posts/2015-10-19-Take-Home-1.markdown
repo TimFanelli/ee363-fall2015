@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "IBM Master the Mainframe"
+categories: ibm mainframe
+---
+# About
+Take home exam 1 is posted here: [Exam 1](http://ee363f15.fanel.li/documents/exam1.pdf). Please print and complete the exam, and turn it in on Monday 10/26 *in class*.
+
+You are encouraged to work together, use Eclipse, Git, and other tools to work through the problems. **However**, all written answers must represent your own understanding of the problem and solution. It is best to work in teams to figure out the problems, but **do not** work together while writing your answers. Sitting with your group while writing your answers results in *very similar* answers that will look like you've copied your work. The only way to avoid this is to work indepdently when you have pen-to-paper on the exam.
