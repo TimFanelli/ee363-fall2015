@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IBM Master the Mainframe"
+title:  "Design Project 1"
 categories: ibm mainframe
 ---
 # About
