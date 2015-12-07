@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Take Home Exam 2"
+categories: exam
+---
+# About
+Take home exam 1 is posted here: [Exam 2](http://ee363f15.fanel.li/documents/exam2.pdf). Please print and complete the exam, and slide it under my office door during deadweek.
+
+You are encouraged to work together, use Eclipse, Git, and other tools to work through the problems. **However**, all written answers must represent your own understanding of the problem and solution. It is best to work in teams to figure out the problems, but **do not** work together while writing your answers. Sitting with your group while writing your answers results in *very similar* answers that will look like you've copied your work. The only way to avoid this is to work indepdently when you have pen-to-paper on the exam.

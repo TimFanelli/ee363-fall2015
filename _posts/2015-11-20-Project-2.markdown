@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Design Project 2"
+categories: exam
+---
+# About
+As discussed in class on Friday, 11/20 - Project 2 is an enhancement of project 1.
+
+* You *must* have properly applied the design patterns and principles to your RPSlS implementation.
+  These were reviewed and discussed in class -- if you missed it, please find someone's notes.
+* You must add a new `Referee` type, which observes the players and uses the Scoring object to determine a winner
+* Implement a `main(String[] args)` method to orchestrate game play using the `Referee`
+
+It is up to you how you handle implementation details, such as
+
+* how does the referee know when all players have notified it of a gesture?
+* how do you resolve ties or determine winners with >2 players?
+* etc.
+
+
+## Code Requirements:
+* You must conform to Java coding style conventions discussed in class.
+* You must utilize JavaDoc style commenting on all public declarations.
+* You must document uses of all design patterns and principles
+in your class comments! 
+
+## Design Requirements:
+* UML Diagrams showing your object design, and design patterns
+* UML Sequence diagram showing the execution flow of a single round of play
+
+
+You are encouraged to work together, use Eclipse, Git, and other tools to work through the problems. **However**, all written answers must represent your own understanding of the problem and solution. It is best to work in teams to figure out the problems, but **do not** work together while writing your answers. Sitting with your group while writing your answers results in *very similar* answers that will look like you've copied your work. The only way to avoid this is to work indepdently when you have pen-to-paper on the exam.
